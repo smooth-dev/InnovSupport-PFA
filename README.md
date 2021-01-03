@@ -16,4 +16,6 @@ Installation:
 -Changer l'URL de l'API backend si necessaire a "http://10.0.2.2:8080/api/adherents" pour prendre en charge le backend inclut
  (utilise mockend autrement) https://github.com/nsdev74/InnovSupport-PFA/blob/main/FrontEnd/gestion_adherents/lib/services/api_service.dart .
 
+-En cas d'utilisation du back end inclut, changer les parametre de la connection de la base de donnee dans https://github.com/nsdev74/InnovSupport-PFA/blob/main/BackEnd/gestionAdherents/src/main/resources/application.properties
+
 -Demarrer une machine virtuel android/iOS avant d'executer le projet flutter.
