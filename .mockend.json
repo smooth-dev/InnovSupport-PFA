@@ -1,0 +1,19 @@
+{
+    "Adherents": {
+      "nomSociete": "string",
+      "affiliation": "string",
+      "denomination": "string",
+      "nomDirigeant": "string",
+      "representeur": "string",
+      "fonction": "string",
+      "gsm": "string",
+      "email": "string",
+      "adresse": "string",
+      "codePostal": "string",
+      "ville": "string",
+      "pays": "string",
+      "telephone": "string",
+      "fax": "string",
+      "siteWeb": "string"
+    }
+  }
