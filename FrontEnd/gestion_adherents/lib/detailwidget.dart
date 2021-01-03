@@ -176,7 +176,7 @@ class _DetailWidgetState extends State<DetailWidget> {
                               onPressed: () {
                                 _navigateToEditScreen(context, widget.adherents);
                               },
-                              child: Text('Edit', style: TextStyle(color: Colors.white)),
+                              child: Text('Modifier', style: TextStyle(color: Colors.white)),
                               color: Colors.blue,
                             ),
                             RaisedButton(
@@ -184,7 +184,7 @@ class _DetailWidgetState extends State<DetailWidget> {
                               onPressed: () {
                                 _confirmDialog();
                               },
-                              child: Text('Delete', style: TextStyle(color: Colors.white)),
+                              child: Text('Supprimer', style: TextStyle(color: Colors.white)),
                               color: Colors.blue,
                             )
                           ],
@@ -212,24 +212,24 @@ class _DetailWidgetState extends State<DetailWidget> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Warning!'),
+          title: Text('Attention!'),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
-                Text('Are you sure want delete this item?'),
+                Text('Voulez vous vraiment supprimer l\'adherent?'),
               ],
             ),
           ),
           actions: <Widget>[
             FlatButton(
-              child: Text('Yes'),
+              child: Text('Oui'),
               onPressed: () {
                 api.deleteAdherents(widget.adherents.id);
                 Navigator.popUntil(context, ModalRoute.withName(Navigator.defaultRouteName));
               },
             ),
             FlatButton(
-              child: const Text('No'),
+              child: const Text('Non'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
