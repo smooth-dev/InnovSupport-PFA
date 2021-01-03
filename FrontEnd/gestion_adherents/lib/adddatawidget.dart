@@ -387,7 +387,7 @@ class _AddDataWidgetState extends State<AddDataWidget> {
                                 onPressed: () {
                                   if (_addFormKey.currentState.validate()) {
                                     _addFormKey.currentState.save();
-                                    api.createCase(Adherents(nomSociete: _nomSocieteController.text, affiliation: affiliation,
+                                    api.createAdherent(Adherents(nomSociete: _nomSocieteController.text, affiliation: affiliation,
                                         denomination: _denominationController.text, nomDirigeant: _nomDirigeantController.text,
                                         representeur: _representeurController.text, fonction: _fonctionController.text,
                                         gsm: _gsmController.text, email: _emailController.text,

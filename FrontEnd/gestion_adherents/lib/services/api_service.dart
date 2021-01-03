@@ -4,21 +4,21 @@ import 'package:gestion_adherents/models/adherents.dart';
 import 'package:http/http.dart';
 
 class ApiService {
-  final String apiUrl = "http://192.168.0.7:3000/api";
+  final String apiUrl = "https://my-json-server.typicode.com/nsdev74/InnovSupport-PFA/Adherents";
 
-  Future<List<Adherents>> getCases() async {
+  Future<List<Adherents>> getAdherents() async {
     Response res = await get(apiUrl);
 
     if (res.statusCode == 200) {
       List<dynamic> body = jsonDecode(res.body);
-      List<Adherents> cases = body.map((dynamic item) => Adherents.fromJson(item)).toList();
-      return cases;
+      List<Adherents> adherents = body.map((dynamic item) => Adherents.fromJson(item)).toList();
+      return adherents;
     } else {
       throw "Failed to load cases list";
     }
   }
 
-  Future<Adherents> getCaseById(String id) async {
+  Future<Adherents> getAdherentById(String id) async {
     final response = await get('$apiUrl/$id');
 
     if (response.statusCode == 200) {
@@ -28,7 +28,7 @@ class ApiService {
     }
   }
 
-  Future<Adherents> createCase(Adherents adherent) async {
+  Future<Adherents> createAdherent(Adherents adherent) async {
     Map data = {
       'nomSociete': adherent.nomSociete,
       'affiliation': adherent.affiliation,
@@ -61,7 +61,7 @@ class ApiService {
     }
   }
 
-  Future<Adherents> updateCases(String id, Adherents adherent) async {
+  Future<Adherents> updateAdherents(String id, Adherents adherent) async {
     Map data = {
       'nomSociete': adherent.nomSociete,
       'affiliation': adherent.affiliation,
@@ -94,7 +94,7 @@ class ApiService {
     }
   }
 
-  Future<void> deleteCase(String id) async {
+  Future<void> deleteAdherents(String id) async {
     Response res = await delete('$apiUrl/$id');
 
     if (res.statusCode == 200) {

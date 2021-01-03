@@ -224,7 +224,7 @@ class _DetailWidgetState extends State<DetailWidget> {
             FlatButton(
               child: Text('Yes'),
               onPressed: () {
-                api.deleteCase(widget.adherents.id);
+                api.deleteAdherents(widget.adherents.id);
                 Navigator.popUntil(context, ModalRoute.withName(Navigator.defaultRouteName));
               },
             ),

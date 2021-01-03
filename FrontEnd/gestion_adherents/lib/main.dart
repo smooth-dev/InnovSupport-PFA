@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future loadList() {
-    Future<List<Adherents>> futureCases = api.getCases();
+    Future<List<Adherents>> futureCases = api.getAdherents();
     futureCases.then((casesList) {
       setState(() {
         this.adherentsList = casesList;

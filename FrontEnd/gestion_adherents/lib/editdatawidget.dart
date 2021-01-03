@@ -39,20 +39,20 @@ class _EditDataWidgetState extends State<EditDataWidget> {
   @override
   void initState() {
     id = widget.adherents.id;
-    nomSociete: widget.adherents.nomSociete;
-    denomination: widget.adherents.denomination;
-    nomDirigeant: widget.adherents.nomDirigeant;
-    representeur: widget.adherents.representeur;
-    fonction: widget.adherents.fonction;
-    gsm: widget.adherents.gsm;
-    email: widget.adherents.email;
-    adresse: widget.adherents.adresse;
-    codePostal: widget.adherents.codePostal;
-    ville: widget.adherents.ville;
-    pays: widget.adherents.pays;
-    telephone: widget.adherents.telephone;
-    fax: widget.adherents.fax;
-    siteWeb: widget.adherents.siteWeb;
+    _nomSocieteController.text = widget.adherents.nomSociete;
+    _denominationController.text = widget.adherents.denomination;
+    _nomDirigeantController.text = widget.adherents.nomDirigeant;
+    _representeurController.text = widget.adherents.representeur;
+    _fonctionController.text = widget.adherents.fonction;
+    _gsmController.text = widget.adherents.gsm;
+    _emailController.text = widget.adherents.email;
+    _adresseController.text = widget.adherents.adresse;
+    _codePostalController.text = widget.adherents.codePostal;
+    _villeController.text = widget.adherents.ville;
+    _paysController.text = widget.adherents.pays;
+    _telephoneController.text = widget.adherents.telephone;
+    _faxController.text = widget.adherents.fax;
+    _siteWebController.text = widget.adherents.siteWeb;
 
     if(widget.adherents.affiliation == 'Oui') {
       _affiliation = Affiliation.Oui;
@@ -417,7 +417,7 @@ class _EditDataWidgetState extends State<EditDataWidget> {
                                 onPressed: () {
                                   if (_addFormKey.currentState.validate()) {
                                     _addFormKey.currentState.save();
-                                    api.updateCases(id, Adherents(nomSociete: _nomSocieteController.text, affiliation: affiliation,
+                                    api.updateAdherents(id, Adherents(nomSociete: _nomSocieteController.text, affiliation: affiliation,
                                         denomination: _denominationController.text, nomDirigeant: _nomDirigeantController.text,
                                         representeur: _representeurController.text, fonction: _fonctionController.text,
                                         gsm: _gsmController.text, email: _emailController.text,
