@@ -1,0 +1,57 @@
+{
+    "Adherents": [
+      {
+	    "id": 1,
+      "nomSociete": "test1",
+      "affiliation": "test1",
+      "denomination": "test1",
+      "nomDirigeant": "test1",
+      "representeur": "test1",
+      "fonction": "test1",
+      "gsm": "test1",
+      "email": "test1",
+      "adresse": "test1",
+      "codePostal": "test1",
+      "ville": "test1",
+      "pays": "test1",
+      "telephone": "test1",
+      "fax": "test1",
+      "siteWeb": "test1"
+      },
+      {
+        "id": 2,
+        "nomSociete": "test2",
+        "affiliation": "test2",
+        "denomination": "test2",
+        "nomDirigeant": "test2",
+        "representeur": "test2",
+        "fonction": "test2",
+        "gsm": "test2",
+        "email": "test2",
+        "adresse": "test2",
+        "codePostal": "test2",
+        "ville": "test2",
+        "pays": "test2",
+        "telephone": "test2",
+        "fax": "test2",
+        "siteWeb": "test2"
+        },{
+          "id": 3,
+          "nomSociete": "test3",
+          "affiliation": "test3",
+          "denomination": "test3",
+          "nomDirigeant": "test3",
+          "representeur": "test3",
+          "fonction": "test3",
+          "gsm": "test3",
+          "email": "test3",
+          "adresse": "test3",
+          "codePostal": "test3",
+          "ville": "test3",
+          "pays": "test3",
+          "telephone": "test3",
+          "fax": "test3",
+          "siteWeb": "test3"
+          }
+    ]
+  }
