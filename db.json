@@ -3,7 +3,7 @@
       {
 	    "id": 1,
       "nomSociete": "test1",
-      "affiliation": "test1",
+      "affiliation": "Oui",
       "denomination": "test1",
       "nomDirigeant": "test1",
       "representeur": "test1",
@@ -21,7 +21,7 @@
       {
         "id": 2,
         "nomSociete": "test2",
-        "affiliation": "test2",
+        "affiliation": "Non",
         "denomination": "test2",
         "nomDirigeant": "test2",
         "representeur": "test2",
@@ -38,7 +38,7 @@
         },{
           "id": 3,
           "nomSociete": "test3",
-          "affiliation": "test3",
+          "affiliation": "Non",
           "denomination": "test3",
           "nomDirigeant": "test3",
           "representeur": "test3",
