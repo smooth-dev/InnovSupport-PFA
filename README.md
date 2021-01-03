@@ -13,6 +13,7 @@ Installation:
 
 -Importer le dossier du projet flutter https://github.com/nsdev74/InnovSupport-PFA/tree/main/FrontEnd/gestion_adherents sur android studio ou IDE preferer.
 
--Changer l'URL de l'API backend si necessaire (utilise mockend autrement) https://github.com/nsdev74/InnovSupport-PFA/blob/main/FrontEnd/gestion_adherents/lib/services/api_service.dart .
+-Changer l'URL de l'API backend si necessaire a "http://10.0.2.2:8080/api/adherents" pour prendre en charge le backend inclut
+ (utilise mockend autrement) https://github.com/nsdev74/InnovSupport-PFA/blob/main/FrontEnd/gestion_adherents/lib/services/api_service.dart .
 
--Demarrer une machine virtuel android/iOS avant d'executer le projet.
+-Demarrer une machine virtuel android/iOS avant d'executer le projet flutter.

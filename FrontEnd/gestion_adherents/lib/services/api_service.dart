@@ -14,7 +14,7 @@ class ApiService {
       List<Adherents> adherents = body.map((dynamic item) => Adherents.fromJson(item)).toList();
       return adherents;
     } else {
-      throw "Failed to load cases list";
+      throw "Echec de chargement de la liste d\'adherents";
     }
   }
 
@@ -24,7 +24,7 @@ class ApiService {
     if (response.statusCode == 200) {
       return Adherents.fromJson(json.decode(response.body));
     } else {
-      throw Exception('Failed to load a case');
+      throw Exception('Echec de chargement d\'adherent');
     }
   }
 
