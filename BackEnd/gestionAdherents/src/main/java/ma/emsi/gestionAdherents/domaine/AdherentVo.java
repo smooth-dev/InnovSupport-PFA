@@ -1,67 +1,50 @@
-package ma.emsi.gestionAdherents.model;
+package ma.emsi.gestionAdherents.domaine;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "adherents")
-public class Adherent {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+public class AdherentVo {
 
-	@Column(name = "nomSociete")
+
+	private long id;
+
 	private String nomSociete;
 
-	@Column(name = "affiliation")
 	private String affiliation;
 
-	@Column(name = "denomination")
 	private String denomination;
 	
-	@Column(name = "nomDirigeant")
 	private String nomDirigeant;
 
-	@Column(name = "representeur")
 	private String representeur;
 	
-	@Column(name = "fonction")
 	private String fonction;
 	
-	@Column(name = "gsm")
 	private String gsm;
 
-	@Column(name = "email")
 	private String email;
 
-	@Column(name = "adresse")
 	private String adresse;
 	
-	@Column(name = "codePostal")
 	private String codePostal;
 
-	@Column(name = "ville")
 	private String ville;
 
-	@Column(name = "pays")
 	private String pays;
 	
-	@Column(name = "telephone")
 	private String telephone;
 	
-	@Column(name = "fax")
 	private String fax;
 
-	@Column(name = "siteWeb")
 	private String siteWeb;
 
 
 	
-	public Adherent() {
+	public AdherentVo() {
 
 	}
 
-	public Adherent(String nomSociete, String affiliation, String denomination, String nomDirigeant,
+	public AdherentVo(String nomSociete, String affiliation, String denomination, String nomDirigeant,
 			String representeur, String fonction, String gsm, String email, String adresse, String codePostal,
 			String ville, String pays, String telephone, String fax, String siteWeb) {
 		this.nomSociete = nomSociete;
@@ -88,7 +71,6 @@ public class Adherent {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
 	public String getNomSociete() {
 		return nomSociete;
 	}

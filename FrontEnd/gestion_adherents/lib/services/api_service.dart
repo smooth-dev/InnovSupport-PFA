@@ -4,14 +4,14 @@ import 'package:gestion_adherents/models/adherents.dart';
 import 'package:http/http.dart';
 
 class ApiService {
-  final String apiUrl = "https://my-json-server.typicode.com/nsdev74/InnovSupport-PFA/Adherents";
-
+  final String apiUrl = "http://192.168.1.6:8080/api/adherents";
   Future<List<Adherents>> getAdherents() async {
     Response res = await get(apiUrl);
 
     if (res.statusCode == 200) {
       List<dynamic> body = jsonDecode(res.body);
-      List<Adherents> adherents = body.map((dynamic item) => Adherents.fromJson(item)).toList();
+      List<Adherents> adherents =
+          body.map((dynamic item) => Adherents.fromJson(item)).toList();
       return adherents;
     } else {
       throw "Echec de chargement de la liste d\'adherents";
@@ -103,5 +103,4 @@ class ApiService {
       throw "Failed to delete a case.";
     }
   }
-
 }
